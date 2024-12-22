@@ -1,340 +1,281 @@
-.div6{  
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-    gap: 150px;  /*المسافة بين الصور */
-    padding: 50px; 
-    width: 90%;
-    margin-bottom: 10px;
 
-    row-gap: 30px
+html{
+    scroll-behavior: smooth;
+}
+
+.header input{
+
+    position: relative;
+    right: 3px;
+    left: 350px;
+    }
+
+   .menu{
+   
+    list-style: none;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    margin-right: 500px;
+
     
 }
 
-.div6 div img{
-    width: 150px;
+ 
+
+
+
+
+
+
+
+ .menu li{
+    margin: 10px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.menu li:hover{
+    background-color: rgb(8, 161, 172);
+   
+    border-radius: 3px;
+}
+
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+top: 0;
+left: 0;
+    background-color: #fefcfc;
+    /*border: 1px solid;*/
+    box-shadow: 0 0 15px rgba(8, 161, 172), 0 0 15px rgba(8, 161, 172);
+    background-repeat: no-repeat;
+    /*background-repeat: repeat-x;*/
+    position: fixed;
+    
+z-index: 1000;
+
+
+   
+
+}
+.header img{
+    margin-left: 120px;
+    width: 90px;
     height: auto;
+
+    
+}
+
+
+
+
+
+body{
+    background: url("bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+.div2{
+    display: flex;
+    justify-content:space-between;
+    margin: 50px;
+}
+
+.div2 input{
+    background-color:rgb(8, 161, 172);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+.div2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-top :140px;
+    
+    
+}
+span{
+color:  rgb(8, 161, 172)
+
+
+}
+.div2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    padding-bottom :20px; 
+    padding-top: 0px;
+    text-align: justify;
+   
+   
+}
+.div3{
+    display: flex;
+    justify-content:space-between;
+    margin: 20px;
+    padding-top :80px; 
+    height: 200px;
+    width: auto; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
+.div3 div {
+
+height: 10; 
+border-width: 3px;
+background-color: white;
+border: 2px solid transparent;
+box-shadow: 0 0 15px rgba(8, 161, 172), 0 0 15px rgba(8, 161, 172);
+width: 300px;
+
+}
+.div3 div img{
     margin-top: 5px;
-    margin-left:50px;
-   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-     
- }
- 
- 
- .div6 div{
- 
-     height: 350px; 
-     width: 250px;
- border-width: 3px;
- background-color: rgb(255, 255, 255);
- border: 1px solid ;
- box-shadow:rgb(53, 53, 53);
+    margin-left:80px;
+    width: 100px;
+   
+}
+.div3  i{
+    color: #089da1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.div4{
+    display: flex;
+    justify-content:space-between;
+    margin: 30px;
+    
+}
+.div4 img{
+
+    width: 750px;
+    height: auto;
+    padding-bottom :70px; 
+}
+
+.div4 h2{
+font-size: 50px;
+padding-top: 70px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 50px;
+ margin-left: 40px;
+  margin-right: 80px; 
+
+}
+
+.div4 p{
+margin-left: 40px; 
+margin-right: 80px;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.5;
+
+}
 
 
- }
-
- .div6 div:hover{
-
-    box-shadow: 0 0 10px rgba(8, 161, 172), 0 0 10px rgba(8, 161, 172);
-    transition: transform 0.3s ease;
- }
-
- .div6 div img:hover{
-       transform: scale(1.01);
-
+.div4 input{
   
+    margin-left: 40px; 
+    margin-right: 80px; 
+  
+    background-color:rgb(8, 161, 172);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+   
+
+
 }
 
 
-
- 
-.div6 p{
-font-size: 20px;
-text-align: center;
-margin-top: 5px;
-
+.div5 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(8, 161, 172);
+    display: inline;
+    white-space: nowrap;
 }
-
-.div6 div a{
-
+.div5 input{
+  
+   /* border:2px double rgb(8, 161, 172);
+    background-color: white;
+*/
 border: 2px solid rgb(8, 161, 172);
     background-color: white;      
 padding: 7px;
 padding-left: 15px;
 padding-right: 15px;
 text-align: center;
-margin-left:70px;
+margin-right:10px;
     font-size: 15px;
     font-family:Arial, Helvetica, sans-serif
-   
-    }
-    .div6 input{
     
-        margin-left: 65px;
-        margin-right: 50px;
-        margin-bottom: 10px;
-        margin-top: -20px;
-       }
+}
+.div5 div{
+    border: 1px solid;
+    margin: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 2px;
+
+}
 
 
-    
+.div5 div:hover{
+    box-shadow: 0 0 10px rgba(8, 161, 172), 0 0 10px rgba(8, 161, 172);
+ 
+}
 
+.div5{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px;
     
-        .div7{
-            
-            display: flex;
-            justify-content:space-between;
-    
-            border-width: 2px;
-            background-color: rgb(255, 255, 255);
-     
-    
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 0 50px;
-            margin: 20px;
-            padding-top :20px; 
-            height: 300px;
-            width: auto; 
-       
-        }
-    
-    
-    
-        .div7 i{
-            
-            position: relative;
-            float: right;
-            font-size: 120px;
-          
-            bottom: 20px;
-            color: #eaeaea;
-        }
-    
-        .div7 div{
-            
-            box-shadow: 0 0 15px rgba(8, 161, 172), 0 0 15px rgba(8, 161, 172);
-            padding-left: 10px;
-            padding-top: 10px;
-            
-        }
-        
-        .div7 img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            float: left;
-            margin-right: 15px;
-        }
-    
-        .div7 p{
-          padding-top: 30px;
-            font-size: 14px;
-            color: #555;
-            line-height: 1.5;
-            margin: 10px 0; 
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-    .div7 h3{
-        position: relative;
-        top:70px;
-        right: 85px;
-     
-       font-family: Arial, Helvetica, sans-serif;
-     
-    }
-    
-   
-    
-    
-    .blog-section {
-        margin: 40px;
-        padding: 20px;
-        margin: 25px 0;
-        
-    }
-    
-    .blog-section h2 {
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #000000;
-        margin-bottom: 20px;
-    
-        
-    }
-    
-    .blog-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-       
-    }
-    
-    .blog-card {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        
-        padding: 0px;
-        text-align: left;
-    }
-    
-    .blog-card img {
-        width: 100%;
-        height: 250px; 
-        object-fit: cover; 
-        padding-bottom: 15px;
-     
-    }
-    
-    .blog-card h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        color: rgb(8, 161, 172);
-        margin-bottom: 10px;
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 10px;
-        
-    }
-    
-    .blog-card p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        line-height: 1.5;
-        color: #000000;
-    
-        text-align: justify;
-        width: 90%;
-        margin: 0 auto;
-       
-        
-    }
-    
-    .blog-icons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-        font-size: 16px;
-    
-        width: 90%;
-        margin: 0 auto;
-       
-    }
-    
-    .blog-icons .heart-icon {
-        color: rgb(8, 161, 172);
-    }
-    
-    
-      
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
 
-    
-    
-    footer{
-        width: 100%;
-        background: #eaeaea;
-    }
-    
-    footer .footer_main{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    footer .footer_main div{
-        margin: 10px 0;
-    }
-    
-    footer .footer_main div img{
-        width: 100px;
-        margin-bottom: 10px;
-    }
-    
-    footer .footer_main div p{
-        width: 250px;
-        line-height: 22px;
-        text-align: justify;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    footer .footer_main div h1{
-        font-size: 25px;
-        margin: 25px 0;
-        color: #000;
-        font-family: Arial, Helvetica, sans-serif;
-        
-    }
-    
-    footer .footer_main div a{
-        display: block;
-        color: black;
-        text-decoration: none;
-        margin: 10px 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    footer .footer_main  i{
-        margin-right: 10px;
-    }
-    
-    footer .footer_main div .social_link i{
-        margin: 0 5px;
-    }
-    
-    footer .footer_main div .search_bar{
-        width: 230px;
-        height: 30px;
-        background: rgba(202,202,202);
-        border-radius: 25px;
-    }
-    
-    footer .footer_main div .search_bar input{
-        width: 200px;
-        padding: 2px 0;
-        position: relative;
-        top: 17%;
-        left: 6%;
-        border: none;
-        outline: none;
-        font-size: 13px;
-        background: none;
-    }
-    
-    footer .footer_main div .search_bar button{
-        padding: 7px 15px;
-        background: #089da1;
-        border: none;
-        margin-top: 15px;
-        border-radius: 25px;
-        color: #fff;
-        cursor: pointer;
-    }
-    
-    footer .end{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
-        color: #000;
-    }
-    
-    footer .end span{
-        color: #089da1;
-        margin-left: 10px;
-    }
+.div5 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    white-space: nowrap;
+}
+.div5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+
+}
 
 
-    ::-webkit-scrollbar{
-        width: 10px;
-        height: 5px;
-    }
+.price{
+    margin: 10px ;
+    font-size: 1rem;
     
-    ::-webkit-scrollbar-track{
-        box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
-    }
-    
-    ::-webkit-scrollbar-thumb{
-        background: #089da1;
-        border-radius: 10px;
-    }
+}
+.current-Price{
+    font-weight: bold;
+    color: #333;
+}
+.original_price{
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
